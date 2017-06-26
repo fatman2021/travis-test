@@ -1,1 +1,6 @@
 
+jobs:
+  os: linux
+  script: 
+    - service --status-all
+    
