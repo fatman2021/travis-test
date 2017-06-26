@@ -4,7 +4,6 @@ compiler: gcc
 
 sudo: required
 
-jobs:
   os: linux
   script: 
     - sudo service --status-all
