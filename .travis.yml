@@ -4,8 +4,9 @@ compiler: gcc
 
 sudo: required
 
-  os: linux
-  script: 
+os: linux
+  
+script: 
     - sudo service --status-all
     - echo "test"
     
