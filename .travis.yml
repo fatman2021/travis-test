@@ -5,5 +5,5 @@ sudo: required
 jobs:
   os: linux
   script: 
-    - service --status-all
+    sudo service --status-all
     
