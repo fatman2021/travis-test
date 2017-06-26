@@ -7,6 +7,6 @@ sudo: required
 jobs:
 os: linux
 script: 
-    - sudo service --status-all
+    - ./covscan.sh
     - echo "test"
     
