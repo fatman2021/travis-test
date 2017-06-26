@@ -15,6 +15,7 @@ coverity_load_proc()
     
     TOOL_DIR=`find $TOOL_BASE -type d -name 'cov-analysis*'`
     export PATH=$TOOL_DIR/bin:$PATH
+    return 0
 }
 
 coverity_run_proc()
@@ -24,10 +25,12 @@ coverity_run_proc()
     
     cov-build --dir $RESULTS_DIR blb -blb
     #cov-import-scm --dir $RESULTS_DIR --scm git --log $RESULTS_DIR/scm_log.txt 2>&1
+    return 0
 }
 
 coverity_upload_proc()
 {
+    return 0
 }
 
 coverity_load_proc $*
